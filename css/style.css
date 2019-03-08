@@ -23,7 +23,7 @@ a {
 }
 
 #hero{
-    height: calc(100vh - 60px);
+    height: 500px;
     padding-bottom: 50px;
     background-image: linear-gradient(to right, #3494E6, #EC6EAD);
     
@@ -184,8 +184,140 @@ a {
     background-size: cover;
 }
 
+.testimonial-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 300px;
+}
 
+.testimonial-item h5{
+    margin-top: 20px;
+    font-size: 30px;
+}
 
+.testimonial-item p{
+    font-size: 20px;
+}
+
+.testimonial-item{
+    transition: all .3s ease-in-out 0s;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.testimonial-item:hover{
+    background-color: #0F2027;
+}
+
+.testimonial-item:hover *{
+    color: white;
+}
+
+.sm-link{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sm-item{
+    display: inline;
+    margin: 5px;
+}
+
+.sm-item i{
+    font-size: 33px;
+    padding: 20px;
+    border-radius: 50%;
+    transition: all 0.3s linear 0s;
+}
+
+.sm-item:hover i{
+    transform: translateY(-10px);
+}
+
+.sm-item:hover .fa-facebook-f{
+    color: blue;
+}
+
+.sm-item:hover .fa-twitter{
+    color: aqua;
+}
+
+.sm-item:hover .fa-pinterest-p{
+    color: red;
+}
+
+.sm-item:hover .fa-linkedin-in{
+    color: #2C5364;
+}
+
+footer{
+    margin-top: 10px;
+    background: linear-gradient(to right, #3494E6, #EC6EAD);
+}
+
+.footer-log img{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.footer-log p{
+    margin-top: 30px;
+    color: #FFF;
+}
+
+.footer-list{
+    margin-top: 20px;
+}
+
+.footer-list h6{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.footer-list ul{
+    list-style-type: none;
+    display: inline;
+}
+
+.footer-list ul li a{
+    color: white;
+}
+
+.footer-contact{
+    margin-top: 20px;
+}
+
+.footer-contact h6{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.footer-contact textarea{
+    resize: none;
+    height: 120px;
+}
+
+.footer-contact button{
+    background: linear-gradient(to right, #3494E6, #EC6EAD);
+    color: white;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.footer-copy p{
+    color: #FFF;
+    font-size: 14px;
+    
+}
+
+hr{
+    border: 1px solid #FFF;
+}
+
+.footer-copy{
+    height: 50px;
+}
 
 
 
