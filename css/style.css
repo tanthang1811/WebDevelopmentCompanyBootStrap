@@ -1,9 +1,20 @@
+a {
+    text-decoration: none;
+}
 .navbar-brand img{
     width: 5em;
 }
 
 #navigator{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar{
     background-image: linear-gradient(to right, #3494E6, #EC6EAD);
+    
 }
 
 .nav-link{
@@ -49,11 +60,133 @@
     font-weight: bold;
 }
 
+#services{
+    height: auto;
+}
+
 .section-header{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 30px;
+    margin-bottom: 50px;
 }
+
+.section-header::before{
+    content: "";
+    height: 1px;
+    width: 200px;
+    background-image: linear-gradient(to right, #3494E6, #EC6EAD);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(60px);
+}
+
+.section-header::after{
+    content: "";
+    height: 5px;
+    width: 40px;
+    background-image: linear-gradient(to right, #3494E6, #EC6EAD);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(13px);
+}
+
+.service-item{
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-item::before{
+    content: "";
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: all .3s ease;
+    z-index: 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, #3494E6, #EC6EAD);
+}
+
+.service-item:hover *{
+    color: #FFF;
+}
+
+
+
+.service-item:hover::before{
+    opacity: 1;
+    
+}
+
+.service-item > * {
+    position: relative;
+}
+
+.service-item i{
+    font-size: 50px;
+    padding: 10px;
+    color: #000;
+}
+
+.service-item p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.readmore-btn{
+    border-radius: 10px;
+    background: linear-gradient(to right, #3494E6, #EC6EAD);
+    color: white;
+    outline-color: #EC6EAD;
+    transition: all 0.5s ease-in;
+    margin-top: 40px;
+}
+
+.readmore-btn:hover{
+    transform: translateY(-20px);
+    background: #3494E6;
+    box-shadow: 0px 6px 7px 0px #000;
+}
+
+.about-us-header{
+    color: white;
+}
+
+
+#about-us{
+    margin-top: 20px;
+    background: linear-gradient(to right, #373B44, #4286f4);
+    padding-bottom: 50px;
+}
+
+.about-us-content h2{
+    margin-top: 50px;
+    color: white;
+}
+
+.about-us-content p{
+    margin-top: 50px;
+    line-height: 30px;
+    color: white;
+}
+
+.about-us-pic{
+    background-image: url(../img/about-us-pic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
 
 
 
